@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: fixed linear-gradient(to bottom right,rgb(0, 225, 255),rgb(4, 17, 201),rgb(0, 225, 255));
+    color: white;
+    height: 100vh;
+}
+form {
+    width: 40%;
+    margin: auto;
+}
+label{
+    animation: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.loginInput {
+    width: 100%;
+    padding: 12px 10px;
+    margin: 8px auto;
+    display: block;
+    box-sizing: border-box;
+    animation: moveInRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+button {
+    background-color: white;
+    color: rgb(4, 17, 201);
+    border-radius: 3rem;
+    transition: all 1s;
+    padding: 14px 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+    cursor: pointer;
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: moveInBottom;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+button:hover {
+    background-color: rgba(28, 13, 194, 0.322);
+    color: rgb(255, 255, 255);
+    border: 5px solid white;
+    width: 50%;
+}
+.imgcontainer {
+    text-align: center;
+    margin-top: 10px;
+}
+img.logo {
+    width: 80%;
+    animation: moveInTop;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+.container {
+    padding: 10px;
+}
+a{
+    color: white;
+}
+a:hover{
+      color:rgb(0, 225, 255);
+}
+span.copy{
+      float: right;
+}
+@media screen and (max-width: 800px) {
+    form, button{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 450px) {
+    form, button{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 320px) {
+    form, .signInBtn{
+        width: 100%;
+    }
+}
+p{
+    text-align: center;
+    text-decoration: underline;
+}
+@keyframes moveInRight {
+    0%{
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    80%{
+        transform: translateX(1rem); /*kicsit menjen túl a nullponton*/
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes moveInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    80%{
+        transform: translateX(-1rem); /*kicsit menjen túl a nullponton*/
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes moveInBottom {
+    0%{
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    80%{
+        transform: translateY(-1rem); /*kicsit menjen túl a nullponton*/
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes moveInTop {
+    0%{
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+
+    80%{
+        transform: translateY(1rem); /*kicsit menjen túl a nullponton*/
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
